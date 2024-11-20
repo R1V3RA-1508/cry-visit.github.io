@@ -27,7 +27,7 @@
         <ul>
             <li>Создание сервера в Discord ( да не в тему программирования) </li>
             <li>Написание оочень простого сайта </li>
-            <il>error 404 </il>
+            <il>Ну тут пока что не исправимый error 404 </il>
         </ul>
     </section>
     <section id="contact">
@@ -36,24 +36,7 @@
         <p>Телефон:+7 (913) 167-80-93 WhatsApp</p>
     </section>
     <footer>
-        <p>&copy; 2024 Ярослав Cry</p>
+        <p>&copy; 2024 Ярослав </p>
     </footer>
 </body>
-<body onload="lifeSite()">
-    <p>Этот сайт существует уже: <span id="life_site" style="color: #0a0; font-size: 120%; font-weight: bold;"></span></p>
-</body>
-<head>
-    <script type="text/javascript">
-        function lifeSite() {
-          var start = new Date('March 27, 2010'); // Дата создания сайта
-          var end = new Date();
-          var life = Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
-          var suffix = new Array("день", "дня", "дней");
-          var keys = [2, 0, 1, 1, 1, 2];
-          var mod = life % 100;
-          var suffix_key = mod > 4 && mod < 20 ? 2 : keys[Math.min(mod%10, 5)];
-          document.getElementById("life_site").innerHTML = life + " " + suffix[suffix_key];
-        }
-      </script>
-</head>
 </html>
