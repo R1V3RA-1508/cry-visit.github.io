@@ -1,63 +1,190 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(99103066, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/99103066" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 <head>
-    <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, iititial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя Визитка</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Ярослав Cry</h1>
-        <p>Начинающий разработчик в сфере Frontend и разработки видео игр</p>
+        <div class="logo">
+            <span class="logo-text"><span class="highlight">Визитка</span></span>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Главная</a></li>
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#skills" class="nav-link">Навыки</a></li>
+                <li><a href="#memes" class="nav-link">Мемы</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+                <li class="donate-btn"><a href="donate.html" class="nav-link donate">Поддержать</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </nav>
-    <section id="about">
-        <h2>Обо мне</h2>
-        <p>Молодой парень который только начинает изучать html js css. </p>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Привет, я <span class="highlight">Ярослав CRY</span></h1>
+            <p>Начинающий разработчик программного обеспечения с отличным чувством юмора.</p>
+            <a href="#contact" class="cta-button">Связаться со мной</a>
+        </div>
     </section>
-    <section id="services">
-        <h2>Услуги</h2>
-        <ul>
-            <li>Создание сервера в Discord ( да не в тему программирования) </li>
-            <li>Написание оочень простого сайта </li>
-            <il>Ну тут пока что не исправимый error 404 </il>
-        </ul>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Обо <span class="highlight">мне</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Я начинающий разработчик, который только начинает свой путь в мире программирования. Сейчас активно изучаю основы веб-разработки и стремлюсь развиваться в этой сфере.</p>
+                    <p>Несмотря на небольшой опыт, я полон энтузиазма и готов учиться новому. В свободное время изучаю учебные материалы, прохожу онлайн-курсы и работаю над собственными небольшими проектами.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/300" alt="Моё фото">
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Контакты</h2>
-        <p>Email: cryteam.discord@gmail.com </p>
-        <p>Телефон:+7 (913) 167-80-93 WhatsApp</p>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Мои <span class="highlight">навыки</span></h2>
+            <p class="section-description">Вот технологии, которыми я владею на данный момент:</p>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 10%"></div>
+                        </div>
+                        <span class="skill-percentage">10%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 10%"></div>
+                        </div>
+                        <span class="skill-percentage">10%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
+                        <span class="skill-percentage">10%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="memes" class="memes">
+        <div class="container">
+            <h2>Немного <span class="highlight">юмора</span></h2>
+            <p class="section-description">Потому что программисты тоже умеют шутить:</p>
+            
+            <div class="meme-gallery">
+                <div class="meme-card">
+                    <img src="https://via.placeholder.com/350x250" alt="Мем о программировании">
+                    <div class="meme-caption">Когда твой код работает с первого раза</div>
+                </div>
+                <div class="meme-card">
+                    <img src="https://via.placeholder.com/350x250" alt="Мем о коде">
+                    <div class="meme-caption">Дебаггинг в продакшене</div>
+                </div>
+                <div class="meme-card">
+                    <img src="https://via.placeholder.com/350x250" alt="Мем о фронтенде">
+                    <div class="meme-caption">CSS: ожидание vs реальность</div>
+                </div>
+            </div>
+            
+            <div class="meme-button-container">
+                <a href="#" class="meme-button">Больше мемов</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p class="section-description">Напишите мне, я всегда открыт для общения и сотрудничества!</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>example@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (123) 456-78-90</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Москва, Россия</span>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Ярослав </p>
+        <div class="footer-content">
+            <p>&copy; 2023 МояВизитка. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-    <head>
-<script src="https://forms.yandex.ru/_static/embed.js"></script><iframe src="https://forms.yandex.ru/u/674db5d1f47e739b3220e5f6/?iframe=1" frameborder="0" name="ya-form-674db5d1f47e739b3220e5f6" width="650"></iframe>
-</head>
 </html>
