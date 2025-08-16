@@ -105,6 +105,7 @@ header.scrolled {
     height: 21px;
     cursor: pointer;
     z-index: 1001;
+    position: absolute;
 }
 
 .bar {
@@ -1452,3 +1453,4 @@ footer {
         padding: 2rem;
     }
 }
+
