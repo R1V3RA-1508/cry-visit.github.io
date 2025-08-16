@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (menuToggle && navMenu) {
         menuToggle.addEventListener('click', function() {
-            menuToggle.classList.toggle('active');
+            // menuToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
             document.body.classList.toggle('no-scroll');
         });
@@ -132,4 +132,5 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Очистка данных админ-панели
     localStorage.removeItem('siteContent');
+
 });
